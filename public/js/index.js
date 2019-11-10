@@ -2,19 +2,19 @@ function myfunction() {
     var width = window.innerWidth;
     console.log(width);
     if (width <= 1024) {
-        var x = document.getElementById("content-message");
-        var y = document.getElementById("tabs");
-        var z = document.getElementById("search");
-        var a = document.getElementById("all-chat");
-        a.style.display = "block";
-        z.style.display = "none";
-        a.style.marginLeft = "-5rem"
-        y.style.display = 'none';
-        x.style.marginLeft;
-        x.style.display = "block";
-        x.style.marginLeft = "-22%";
-        x.style.marginTop = "-87vh";
-        x.style.width = "115%";
+        var message = document.getElementById("content-message");
+        var tabs = document.getElementById("tabs");
+        var search = document.getElementById("search");
+        var chat = document.getElementById("all-chat");
+        chat.style.display = "block";
+        search.style.display = "none";
+        chat.style.marginLeft = "-5rem"
+        tabs.style.display = 'none';
+        message.style.marginLeft;
+        message.style.display = "block";
+        message.style.marginLeft = "-22%";
+        message.style.marginTop = "-87vh";
+        message.style.width = "115%";
     }
 }
 $(document).ready(function() {
@@ -23,17 +23,22 @@ $(document).ready(function() {
     var check = false;
 
     $('#icon-bars').click(function() {
-        var x = document.getElementById("mobile-menu");
-        var y = document.getElementById("mobile-menu-icon");
+        var menu = document.getElementById("mobile-menu");
+        var icon = document.getElementById("mobile-menu-icon");
+        var menuicon = document.getElementById('menu-icon');
         if (check) {
 
-            x.style.display = "none";
-            y.style.display = "none";
+            menu.style.display = "none";
+            icon.style.display = "none";
+            menuicon.style.marginTop = "-0.2rem"
+
             check = false;
         } else {
-            x.style.display = "block";
-            y.style.display = "block";
+            menu.style.display = "block";
+            icon.style.display = "block";
             check = true;
+            menuicon.style.marginTop = "-4.2rem"
+
         }
 
     })

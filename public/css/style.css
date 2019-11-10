@@ -52,34 +52,11 @@ li {
 .menu-icon li {
     border: 1px solid black;
     border-radius: 50%;
-    background-color: gray;
+    background-color: white;
 }
 
 .icon {
     display: none;
-}
-
-@media screen and (max-width: 600px) {
-    .menu-icon li:not(:first-child) {
-        display: none;
-    }
-    .menu-icon li.icon {
-        float: right;
-        display: block;
-        float: right;
-    }
-    .sidebar-mobile-menu li {
-        display: block;
-        margin-top: -1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin-left: -3rem;
-        margin-bottom: 1rem;
-        padding-left: 3rem;
-    }
-    .sidebar-mobile-menu :hover {
-        background-color: lightgray;
-    }
 }
 
 .fa-user,
@@ -122,6 +99,10 @@ li {
     padding: 1rem 1rem 1rem 1rem;
     font-size: 1rem;
     margin-right: 0%;
+}
+
+.sidebar-menu :hover {
+    background-color: white;
 }
 
 .sidebar-menu a :hover {
@@ -305,7 +286,7 @@ li {
         position: relative;
     }
     .tabs-menu {
-        width: 95%;
+        width: 93%;
         margin: 3rem 1rem 0.5rem 1.3rem;
         height: 70vh;
         border: 3px solid black;
@@ -314,10 +295,10 @@ li {
         cursor: pointer;
     }
     .menu-icon {
-        margin-top: -0.1rem;
+        margin-top: -0.2rem;
     }
     .logo {
-        margin-top: -1rem;
+        margin-top: -0.5rem;
         margin-left: -3rem;
     }
     .top-menu {
@@ -325,8 +306,8 @@ li {
     }
     .search-input {
         padding-left: 1.5rem;
-        margin-left: 1rem;
-        width: 95%;
+        margin-left: 1.1rem;
+        width: 94%;
         line-height: 1.5rem;
         height: 3rem;
         border: 3px solid black;
@@ -334,7 +315,7 @@ li {
     }
     .list-messages {
         width: 100%;
-        padding-top: 1rem;
+        padding-top: 2rem;
         border: 3px solid black;
         height: 60vh;
         overflow-y: visible;
@@ -359,8 +340,11 @@ li {
     }
     .mobile-item {
         margin-left: 0rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .mobile-menu-icon {
+        width: 300;
     }
 }
 
@@ -374,9 +358,14 @@ li {
 
 .mobile-item {
     margin-left: 0rem;
-    padding-left: 1rem;
-    border: 1px solid black;
-    border-radius: 50%;
+    padding-left: 0rem;
+    padding-right: 0.5rem;
+}
+
+.mobile-item .fa-user,
+.fa-comments,
+.fa-bell {
+    color: white;
 }
 
 .mobile-menu-icon {
