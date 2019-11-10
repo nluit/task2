@@ -362,12 +362,6 @@ li {
     padding-right: 0.5rem;
 }
 
-.mobile-item .fa-user,
-.fa-comments,
-.fa-bell {
-    color: white;
-}
-
 .mobile-menu-icon {
     display: none;
 }
